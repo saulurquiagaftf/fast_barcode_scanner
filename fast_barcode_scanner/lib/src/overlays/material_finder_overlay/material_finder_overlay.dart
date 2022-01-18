@@ -159,7 +159,7 @@ class MaterialPreviewOverlayState extends State<MaterialPreviewOverlay>
           fit: StackFit.expand,
           children: [
              BackdropFilter(
-              filter: ui.ImageFilter.blur(sigmaX: 4.0, sigmaY: 3.16),
+              filter: ImageFilter.blur(sigmaX: 4.0, sigmaY: 3.16),
               child: CustomPaint(
                 painter: MaterialFinderPainter(
                   borderPaint: defaultBorderPaint,
