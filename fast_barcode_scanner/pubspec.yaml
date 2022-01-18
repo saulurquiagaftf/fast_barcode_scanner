@@ -13,9 +13,10 @@ dependencies:
   flutter:
     sdk: flutter
   fast_barcode_scanner_platform_interface:
-    url: git://github.com/saulurquiagaftf/fast_barcode_scanner.git
-    ref: 20_rectangle_of_interest
-    path: fast_barcode_scanner_platform_interface/
+    git:
+      url: git://github.com/saulurquiagaftf/fast_barcode_scanner.git
+      ref: 20_rectangle_of_interest
+      path: fast_barcode_scanner_platform_interface/
 
 dev_dependencies:
   flutter_test:
