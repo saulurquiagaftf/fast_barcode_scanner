@@ -47,7 +47,6 @@ class MaterialFinderPainter extends CustomPainter {
 
     if (backgroundColor != null) {
       final backgroundPaint = Paint()..color = backgroundColor!;
-      backgroundPaint..maskFilter = MaskFilter.blur(BlurStyle.normal, 100.0);
       final cutOutPath = Path.combine(
         PathOperation.difference,
         Path()..addRect(screenRect),
