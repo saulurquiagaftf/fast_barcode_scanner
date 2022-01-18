@@ -158,17 +158,13 @@ class MaterialPreviewOverlayState extends State<MaterialPreviewOverlay>
         child: Stack(
           fit: StackFit.expand,
           children: [
-             BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 4.0, sigmaY: 3.16),
-              child: CustomPaint(
-                painter: MaterialFinderPainter(
-                  borderPaint: defaultBorderPaint,
-                  backgroundColor: widget.backgroundColor,
-                  rectOfInterest: widget.rectOfInterest,
-                  showScanLine: widget.showScanLine,
-                ),
+             MaterialFinderPainter(
+                borderPaint: defaultBorderPaint,
+                backgroundColor: widget.backgroundColor,
+                rectOfInterest: widget.rectOfInterest,
+                showScanLine: widget.showScanLine,
               ),
-            ),
+
             if (widget.showSensing)
               AnimatedBuilder(
                 animation: _controller!,
