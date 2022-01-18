@@ -158,13 +158,14 @@ class MaterialPreviewOverlayState extends State<MaterialPreviewOverlay>
         child: Stack(
           fit: StackFit.expand,
           children: [
-             MaterialFinderPainter(
-                borderPaint: defaultBorderPaint,
-                backgroundColor: widget.backgroundColor,
-                rectOfInterest: widget.rectOfInterest,
-                showScanLine: widget.showScanLine,
+             CustomPaint(
+                painter: MaterialFinderPainter(
+                  borderPaint: defaultBorderPaint,
+                  backgroundColor: widget.backgroundColor,
+                  rectOfInterest: widget.rectOfInterest,
+                  showScanLine: widget.showScanLine,
+                ),
               ),
-
             if (widget.showSensing)
               AnimatedBuilder(
                 animation: _controller!,
